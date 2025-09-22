@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="container mx-auto">
+        <h1 class="text-center text-4xl mt-10">TÍNH TIỀN CÁP</h1>
+
+
+        <form class="max-w-sm mx-auto">
+            <div class="mb-5">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">MÃ KHÁCH HÀNG</label>
+                <input type="text" id="inputMaKhachHang"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
+            </div>
+
+
+            <div class="mb-5">
+                <label class="block mb-3 text-sm font-medium text-gray-900 dark:text-dark">LOẠI KHÁCH HÀNG</label>
+                <input type="radio" id="inputNhaDan" name="loaiKhachHang"  onchange="checkLoaiKhachHang()">
+                <label for="html" class="mr-10">Nhà Dân</label>
+                <input type="radio" id="inputDoanhNghiep" name="loaiKhachHang"  onchange="checkLoaiKhachHang()">
+                <label for="html">Doanh Nghiệp</label>
+            </div>
+
+
+
+            <div class="mb-5">
+                <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">SỐ KẾT NỐI</label>
+                <input type="number" id="inputSoKetNoi"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed"
+                    required />
+            </div>
+            <div class="mb-5">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">SỐ KÊNH CAO CẤP</label>
+                <input  id="inputSoKenhCaoCap"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
+            </div>
+
+            <button type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="btn_TC()">Submit</button>
+        </form>
+         <div id="ketQua" class="mt-4 text-lg font-bold text-center text-blue-700"></div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+<script src="./js/tienCap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind_cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <h1 class="text-center text-4xl mt-10">TÍNH TIỀN ĐIỆN</h1>
+
+        <!-- form nhập dữ liệu -->
+
+
+        <form class="max-w-sm mx-auto mt-10">
+            <div class="mb-5">
+                <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">ĐIỀN TÊN KHÁCH HÀNG</label>
+                <input type="text" id="input_ten_khach_hang"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
+            </div>
+            <div class="mb-5">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">TỔNG SỐ ĐIỆN (KW)</label>
+                <input type="text" id="input_so_dien"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
+            </div>
+          
+            <button type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onclick="btn_tong()">TỔNG</button>
+        </form>
+
+
+
+
+
+
+
+
+
+        <!-- table ==========-->
+        <div class="relative overflow-x-auto mt-20  hidden" id="table_res">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Tên Chủ Hộ
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            SỐ KW
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            BẢNG GIÁ
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            TỔNG TIỀN
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white" id="ten_chu_ho">
+                           
+                        </th>
+                        <td class="px-6 py-4" id="khoang_50">
+                           
+                        </td>
+                        <td class="px-6 py-4"id="gia_khoang_50">
+                            
+                        </td>
+                        <td class="px-6 py-4" id="show_tong_tien">
+                           
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            
+                        </th>
+                        <td class="px-6 py-4"id="khoang_100">
+                           
+                        </td>
+                        <td class="px-6 py-4"id="gia_khoang_100">
+                           
+                        </td>
+                        <td class="px-6 py-4">
+                         
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            
+                        </th>
+                        <td class="px-6 py-4"id="khoang_200">
+                           
+                        </td>
+                        <td class="px-6 py-4" id="gia_khoang_200">
+                           
+                        </td>
+                        <td class="px-6 py-4">
+                           
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            
+                        </th>
+                        <td class="px-6 py-4"id="khoang_350">
+                           
+                        </td>
+                        <td class="px-6 py-4"id="gia_khoang_350">
+                           
+                        </td>
+                        <td class="px-6 py-4">
+                          
+                        </td>
+                    </tr>
+                    <tr class="bg-white dark:bg-gray-800">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                       
+                        </th>
+                        <td class="px-6 py-4" id="khoang_con_lai">
+                            
+                        </td>
+                        <td class="px-6 py-4"id="gia_khoang_con_lai">
+                           
+                        </td>
+                        <td class="px-6 py-4">
+                           
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <script src="./js/tienDien.js"></script>
+</body>
+
+</html>

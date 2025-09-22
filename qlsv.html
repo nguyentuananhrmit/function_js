@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind_cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container mx-auto mt-10">
+        <h1 class="text-center text-4xl ">Quản Lý Tuyển Sinh</h1>
+
+
+
+        <table class="border border-gray-400 border-collapse mx-auto text-center mt-10">
+            <thead class="bg-rose-200">
+                <tr>
+                    <th colspan="3" class="border border-gray-400 px-4 py-2">Khu vực</th>
+                    <th colspan="3" class="border border-gray-400 px-4 py-2">Đối tượng</th>
+                </tr>
+                <tr class="bg-rose-100">
+                    <th class="border border-gray-400 px-4 py-2">A</th>
+                    <th class="border border-gray-400 px-4 py-2">B</th>
+                    <th class="border border-gray-400 px-4 py-2">C</th>
+                    <th class="border border-gray-400 px-4 py-2">1</th>
+                    <th class="border border-gray-400 px-4 py-2">2</th>
+                    <th class="border border-gray-400 px-4 py-2">3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-400 px-4 py-2">2</td>
+                    <td class="border border-gray-400 px-4 py-2">1</td>
+                    <td class="border border-gray-400 px-4 py-2">0.5</td>
+                    <td class="border border-gray-400 px-4 py-2">2.5</td>
+                    <td class="border border-gray-400 px-4 py-2">1.5</td>
+                    <td class="border border-gray-400 px-4 py-2">1</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- table bài tập 1 ------->
+
+
+        <!-- form-------------------- -->
+
+        <h3 class="text-center text-2xl font-medium mt-10">Form Điền Thông Tin</h3>
+
+
+
+        <form class="max-w-sm mx-auto">
+            <div class="mb-5 mt-5">
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">ĐIỂM
+                    CHUẨN</label>
+                <input type="number" id="diemChuan"
+                    class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                    </div>
+                <div class="mb-5 mt-5">
+                    <label for="password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">TOÁN</label>
+                    <input type="number" id="toan"
+                        class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                        required />
+                </div>
+                <div class="mb-5 mt-5">
+                    <label for="repeat-password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">VĂN</label>
+                    <input type="number" id="van"
+                        class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                        required />
+                </div>
+                <div class="mb-5 mt-5">
+                    <label for="repeat-password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">ANH</label>
+                    <input type="number" id="anh"
+                        class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                        required />
+                </div>
+                <div class="mb-5 mt-5">
+                    <label for="repeat-password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">KHU VỰC</label>
+                    <input type="text" id="khuVuc"
+                        class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light uppercase"
+                        required />
+                </div>
+                <div class="mb-5 mt-5">
+                    <label for="repeat-password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">ĐỐI TƯỢNG</label>
+                    <input type="number" id="doiTuong"
+                        class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                        required />
+                </div>
+
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    onclick="tinhToan()">TÍNH TOÁN</button>
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- show information --------->
+
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-20 hidden" id="form_qlsv">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        ĐIỂM CHUẨN
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        TOÁN
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        VĂN
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        ANH
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        TỔNG ĐIỀM 3 MÔN
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        KHU VỰC
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        ĐỐI TƯỢNG
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        KẾT QUẢ
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                    <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_dienChuan">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_toan">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_van">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_anh">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_tong_diem_3_mon">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_khuVuc">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_doiTuong">
+
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        id="show_qlsv_ketQua">
+
+                    </td>
+
+                </tr>
+
+
+
+
+
+
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/qlsv.js"></script>
+</body>
+
+</html>

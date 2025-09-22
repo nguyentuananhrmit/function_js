@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính Thuế Thu Nhập Cá Nhân</title>
+  <script src="./tinhThue.js" defer></script>
+</head>
+<body>
+  <div style="max-width: 400px; margin: 20px auto; text-align: center;">
+    <input id="hoTen" placeholder="Họ tên" style="display:block;margin:8px auto;padding:5px;width:90%">
+    <input id="thuNhapNam" type="number" placeholder="Tổng thu nhập năm (triệu)" style="display:block;margin:8px auto;padding:5px;width:90%">
+    <input id="soNguoiPhuThuoc" type="number" placeholder="Số người phụ thuộc" style="display:block;margin:8px auto;padding:5px;width:90%">
+    <button onclick="tinhThue()" style="margin-top:10px;padding:6px 20px;">Tính Thuế</button>
+    <div id="ketQua" style="margin-top:15px;font-weight:bold;color:#0b5ed7;"></div>
+  </div>
+
+  <script src="./js/tienThue.js"></script>
+</body>
+</html>
